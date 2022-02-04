@@ -20,13 +20,24 @@ export default {
       type: Number,
       default: 10,
     },
+    prefix: {
+      type: String,
+      default: undefined
+    }
   },
   render(h) {
     const pages = this.$site.pages
       .filter((a) => a.frontmatter?.publish !== false)
       .filter((a) => a.regularPath.startsWith(this.$page.regularPath))
+      .filter((a) => {
+        if(!this.prefix) {
+          return true;
+        } else {
+          return a.regularPath.startsWith(this.prefix);
+        }
+      })
       .map((a) => ({ ...a, lastUpdated: new Date(a.lastUpdated) }))
-      .sort((a, b) => b.lastUpdated - a.lastUpdated)
+      .reverse()
       .slice(0, this.number)
       .map((a) =>
         h("li", [
