@@ -1,22 +1,22 @@
 {
-  "name": "vuepress-plugin-latest-articles",
+  "name": "vuepress-latest-articles",
   "version": "1.0.0",
   "description": "latest-articles plugin for vuepress",
-  "author": "Celeste <yuan.zx@outlook.com>",
+  "author": "fudongdonguestc@gmail.com",
   "license": "MIT",
   "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": "github:nsznsznjsz/vuepress-plugin-latest-articles",
+  "repository": "github:yihuaxiang/vuepress-plugin-latest-articles",
   "keywords": [
     "vue",
     "vueprss",
     "blog"
   ],
   "bugs": {
-    "url": "https://github.com/nsznsznjsz/vuepress-plugin-latest-articles/issues/new",
-    "email": "yuan.zx@outlook.com"
+    "url": "https://github.com/yihuaxiang/vuepress-plugin-latest-articles/issues/new",
+    "email": "fudongdonguestc@gmail.com"
   },
   "publishConfig": {
     "access": "public"
